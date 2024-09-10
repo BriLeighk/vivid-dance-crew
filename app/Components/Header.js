@@ -1,7 +1,7 @@
-
 import { useState } from 'react'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
+import Image from 'next/image';
 
 const navigation = [
   { name: 'Team', href: '#' }
@@ -17,9 +17,11 @@ export default function Header() {
           <div className="flex lg:flex-1">
             <a href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">VIVID Dance Crew</span>
-              <img
-                alt=""
+              <Image
                 src="/logo.png"
+                alt=""
+                width={500}
+                height={300}
                 className="h-12 w-auto"
               />
             </a>
@@ -53,9 +55,11 @@ export default function Header() {
             <div className="flex items-center justify-between">
               <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">VIVID Dance Crew</span>
-                <img
-                  alt=""
+                <Image
                   src="./logo.png"
+                  alt=""
+                  width={500}
+                  height={300}
                   className="h-12 w-auto"
                 />
               </a>

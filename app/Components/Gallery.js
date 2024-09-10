@@ -5,6 +5,7 @@ import { faStar, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-i
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
+import Image from 'next/image';
 
 // Firebase configuration
 const firebaseConfig = {
@@ -109,11 +110,12 @@ export default function Gallery() {
           <div className="grid grid-cols-4 gap-2 ">
             {currentPhotos.map((photo, index) => (
               <div key={index} className="relative w-full h-32">
-                <img
+                <Image
                   src={photo}
                   alt={`Photo ${index + 1}`}
-                  className="object-cover w-full h-full border-4 border-[#CBC9FF] rounded-lg shadow-lg shadow-[#C4B5EE]"
-                  loading="lazy" // Added lazy loading attribute
+                  width={500}
+                  height={300}
+                  loading="lazy"
                 />
               </div>
             ))}
