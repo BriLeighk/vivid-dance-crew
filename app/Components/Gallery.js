@@ -108,12 +108,12 @@ export default function Gallery() {
           />
           <div className="grid grid-cols-4 gap-2 ">
             {currentPhotos.map((photo, index) => (
-              <div key={index} className="relative w-full h-32">
+              <div key={index} className="relative w-full h-[60px] sm:h-[100px] md:h-[140px] lg:h-[180px]">
                 <img
                   src={photo}
                   alt={`Photo ${index + 1}`}
                   className="object-cover w-full h-full border-4 border-[#CBC9FF] rounded-lg shadow-lg shadow-[#C4B5EE]"
-                  loading="lazy" // Added lazy loading attribute
+                  loading="lazy"
                 />
               </div>
             ))}
