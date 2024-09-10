@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import About from './Components/About';
 import Gallery from './Components/Gallery';
+import Newsletter from './Components/Newsletter';
 
 export default function Home() {
   return (
@@ -39,17 +40,16 @@ export default function Home() {
             Our goal is to provide a platform for dancers of all levels to hone their talents in a welcoming and safe environment.
 
             </p>
-            <div className="flex justify-center mt-4">
-              <a href="https://www.instagram.com/vividdancecrew" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+            <div className="flex justify-center mt-4 z-1000">
+              <a href="https://www.instagram.com/vividdancecrew" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a href="http://www.youtube.com/@VIVIDDANCECREW" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              <a href="http://www.youtube.com/@VIVIDDANCECREW" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
               </a>
-              <a href="https://www.tiktok.com/@vividdancecrew23" target="_blank" rel="noopener noreferrer" className="text-white mx-2">
+              <a href="https://www.tiktok.com/@vividdancecrew23" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
                 <FontAwesomeIcon icon={faTiktok} size="2x" />
               </a>
-              
             </div>
 
           </div>
@@ -70,6 +70,7 @@ export default function Home() {
     </div>
     <About />
     <Gallery />
+    <Newsletter />
     </div>
     
   );
