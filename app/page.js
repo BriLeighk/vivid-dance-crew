@@ -3,8 +3,9 @@
 import Header from "./Components/Header";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 import About from './Components/About';
+import Gallery from './Components/Gallery';
+
 export default function Home() {
   return (
     <div>
@@ -68,6 +69,7 @@ export default function Home() {
       </div>
     </div>
     <About />
+    <Gallery />
     </div>
     
   );
