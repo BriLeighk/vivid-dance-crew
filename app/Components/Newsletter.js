@@ -47,7 +47,7 @@ export default function NewsletterSection() {
 
   return (
     <div className="mb-20">
-        <div className="flex justify-center mb-32">
+        <div className="flex justify-center mb-32 mt-12">
             
             {/* For small screens, display one of each star color */}
             <FontAwesomeIcon icon={faStar} size="2x" className="text-[#A790C6] mx-1 sm:mx-2 sm:size-3x" />

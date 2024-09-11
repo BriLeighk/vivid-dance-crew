@@ -71,7 +71,7 @@ export default function Home() {
     </div>
     <About />
     <Gallery />
-    {'<Team />'}
+    
     <Newsletter />
     </div>
     
