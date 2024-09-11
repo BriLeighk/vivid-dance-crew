@@ -6,6 +6,7 @@ import { faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-i
 import About from './Components/About';
 import Gallery from './Components/Gallery';
 import Newsletter from './Components/Newsletter';
+import Team from './Components/Team';
 
 export default function Home() {
   return (
@@ -70,6 +71,7 @@ export default function Home() {
     </div>
     <About />
     <Gallery />
+    {'<Team />'}
     <Newsletter />
     </div>
     
