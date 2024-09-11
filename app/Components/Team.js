@@ -10,15 +10,15 @@ export default function Team() {
         { name: 'Urmika Banerjee', role: 'External President', instagram: 'https://www.instagram.com/urmika.banerjee14/', image: '/urmika.jpg' },
 
         { name: 'Erika Huang', role: 'Co-Performance Director', instagram: 'https://www.instagram.com/eriiiiika_h/', image: '/erika.jpg' },
-        { name: 'Connie Zhao', role: 'Co-Performance Director', instagram: 'https://www.instagram.com/c.onniez/', image: '/placeholder.png' },
-        { name: 'Kelley Zhang', role: 'Co-Performance Director', instagram: 'https://www.instagram.com/k_zhang123/', image: '/placeholder.png' },
+        { name: 'Connie Zhao', role: 'Co-Performance Director', instagram: 'https://www.instagram.com/c.onniez/', image: '/connie.jpg' },
+        { name: 'Kelley Zhang', role: 'Co-Performance Director', instagram: 'https://www.instagram.com/k_zhang123/', image: '/kelley.jpg' },
 
-        { name: 'Molly Cleary', role: 'Production Manager', instagram: 'https://www.instagram.com/molly.cco/', image: '/placeholder.png' },
+        { name: 'Molly Cleary', role: 'Production Manager', instagram: 'https://www.instagram.com/molly.cco/', image: '/molly.jpg' },
 
-        { name: 'Linglin Huang', role: 'Co-Dance Manager', instagram: 'https://www.instagram.com/00hhhxx/', image: '/placeholder.png' },
-        { name: 'Jazzy', role: 'Co-Dance Manager', instagram: 'https://www.instagram.com/j.provvb/', image: '/placeholder.png' },
+        { name: 'Linglin Huang', role: 'Co-Dance Manager', instagram: 'https://www.instagram.com/00hhhxx/', image: '/linglin.jpg' },
+        { name: 'Jazzy Braxton', role: 'Co-Dance Manager', instagram: 'https://www.instagram.com/j.provvb/', image: '/jazzy.jpg' },
         
-        { name: 'Allie Moreton', role: 'Co-Social Media Manager', instagram: 'https://www.instagram.com/alliemoreton/', image: '/placeholder.png' },
+        { name: 'Allie Moreton', role: 'Co-Social Media Manager', instagram: 'https://www.instagram.com/alliemoreton/', image: '/allie.jpg' },
         { name: 'Eleanor Zhang', role: 'Co-Social Media Manager', instagram: 'https://www.instagram.com/j7_ez_61/', image: '/eleanor.jpg' },
     ]);
 
