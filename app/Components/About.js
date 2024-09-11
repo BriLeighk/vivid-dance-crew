@@ -2,11 +2,22 @@
 
 'use client'
 
-import { useState } from 'react'
+import { useState } from 'react';
 import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function About() {
+  const [activeTab, setActiveTab] = useState('playlist1');
+
+  const playlists = {
+    playlist1: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcEgGGb6NhFzf-1ijByMLKoR",
+    playlist2: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcHFCKSx6LKmuDQbsfFx7DcK",
+    playlist3: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcEOC9qtyXwis_YjlYQc9-H7",
+    playlist4: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcGD0MdtojMS1EnLPQ4DI8d6",
+    playlist5: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcHCh1zV9WcyCMsVHUN4-MUs",
+    playlist6: "https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcENfQfd_ZmLruS0lVLBC5TI",
+  };
+
   return (
     <div className="">
       
@@ -47,14 +58,22 @@ export default function About() {
         </div>
 
         <div className="mx-auto mt-12 lg:mt-0 flex justify-center items-center flex-col lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0 lg:h-full">
-            <div className="h-full mx-auto lg:mt-0 border-4 border-[#DED3FF] rounded-lg order-1 lg:order-2" style={{ alignSelf: 'center' }}>
-                <iframe
-                  className="self-center h-[200px] w-[356px] sm:h-[320px] sm:w-[569px] md:h-[384px] md:w-[683px] lg:h-[360px] lg:w-[640px]"
-                  src="https://www.youtube.com/embed/videoseries?list=PLEL6wtrsFBcEgGGb6NhFzf-1ijByMLKoR&vq=hd1080&rel=0&modestbranding=1&autoplay=1&controls=0&showinfo=0"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
+            <div className="h-full mx-auto lg:mt-0 order-1 lg:order-2" style={{ alignSelf: 'center' }}>
+              <div className="flex justify-center mb-4 gap-2">
+                <button onClick={() => setActiveTab('playlist1')} className={`px-4 py-2 ${activeTab === 'playlist1' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2024</button>
+                <button onClick={() => setActiveTab('playlist2')} className={`px-4 py-2 ${activeTab === 'playlist2' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2023</button>
+                <button onClick={() => setActiveTab('playlist3')} className={`px-4 py-2 ${activeTab === 'playlist3' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2022</button>
+                <button onClick={() => setActiveTab('playlist4')} className={`px-4 py-2 ${activeTab === 'playlist4' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2021</button>
+                <button onClick={() => setActiveTab('playlist5')} className={`px-4 py-2 ${activeTab === 'playlist5' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2020</button>
+                <button onClick={() => setActiveTab('playlist6')} className={`px-4 py-2 ${activeTab === 'playlist6' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2019</button>
+              </div>
+              <iframe
+                className="border-4 border-[#DED3FF] rounded-lg self-center h-[200px] w-[356px] sm:h-[320px] sm:w-[569px] md:h-[384px] md:w-[683px] lg:h-[360px] lg:w-[640px]"
+                src={playlists[activeTab]}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
             <div className=" flex justify-center items-center max-w-2xl py-20 sm:py-20 lg:py-32 order-2 lg:order-1">

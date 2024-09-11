@@ -27,7 +27,7 @@ export default function NewsletterSection() {
   };
 
   return (
-    <div className="relative isolate py-16 sm:py-20 lg:py-32 min-h-screen flex flex-col justify-center overflow-hidden">
+    <div className="relative isolate py-4 sm:py-2 lg:py-10 min-h-screen flex flex-col justify-center overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
@@ -46,7 +46,7 @@ export default function NewsletterSection() {
               />
               <button
                 type="submit"
-                className="flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm border border-[#785C92] bg-[#785C92] hover:border-[#CBC9FF] rounded"
+                className="flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm border bg-[#C4B5EE] hover:bg-[#785C92] rounded"
                 style={{ transition: 'background-color 0.3s ease-in-out' }}
               >
                 Subscribe
