@@ -60,12 +60,12 @@ export default function About() {
         <div className="mx-auto mt-12 lg:mt-0 flex justify-center items-center flex-col lg:flex-row lg:items-start lg:space-x-8 lg:space-y-0 lg:h-full">
             <div className="h-full mx-auto lg:mt-0 order-1 lg:order-2" style={{ alignSelf: 'center' }}>
               <div className="flex justify-center mb-4 gap-2">
-                <button onClick={() => setActiveTab('playlist1')} className={`px-4 py-2 ${activeTab === 'playlist1' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2024</button>
-                <button onClick={() => setActiveTab('playlist2')} className={`px-4 py-2 ${activeTab === 'playlist2' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2023</button>
-                <button onClick={() => setActiveTab('playlist3')} className={`px-4 py-2 ${activeTab === 'playlist3' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2022</button>
-                <button onClick={() => setActiveTab('playlist4')} className={`px-4 py-2 ${activeTab === 'playlist4' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2021</button>
-                <button onClick={() => setActiveTab('playlist5')} className={`px-4 py-2 ${activeTab === 'playlist5' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2020</button>
-                <button onClick={() => setActiveTab('playlist6')} className={`px-4 py-2 ${activeTab === 'playlist6' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2019</button>
+                <button onClick={() => setActiveTab('playlist1')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist1' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2024</button>
+                <button onClick={() => setActiveTab('playlist2')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist2' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2023</button>
+                <button onClick={() => setActiveTab('playlist3')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist3' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2022</button>
+                <button onClick={() => setActiveTab('playlist4')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist4' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2021</button>
+                <button onClick={() => setActiveTab('playlist5')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist5' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2020</button>
+                <button onClick={() => setActiveTab('playlist6')} className={`px-2 py-1 sm:px-4 sm:py-2 ${activeTab === 'playlist6' ? 'bg-[#785C92] text-white' : 'bg-[#C4B5EE]'}`}>2019</button>
               </div>
               <iframe
                 className="border-4 border-[#DED3FF] rounded-lg self-center h-[200px] w-[356px] sm:h-[320px] sm:w-[569px] md:h-[384px] md:w-[683px] lg:h-[360px] lg:w-[640px]"
