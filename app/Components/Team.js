@@ -59,7 +59,7 @@ export default function Team() {
                             <h1 className="text-xl font-bold tracking-tight sm:text-2xl text-center text-[#785C92] mb-2">Presidents</h1>
                             <div className="flex justify-center gap-x-4 mb-16">
                                 {teamMembers.slice(0, 2).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#ACB2FF] border-4 border-[#CDD6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                    <div key={index} className="flex flex-col items-center bg-[#ACB2FF] border-4 border-[#CDD6FF] rounded-lg p-4 shadow-lg h-[190px] w-[143px] sm:h-[240px] sm:w-[180px] justify-center">
                                     <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#CDD6FF]" />
                                     <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white wrap-none">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
