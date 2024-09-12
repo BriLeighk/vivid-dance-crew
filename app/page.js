@@ -13,7 +13,7 @@ export default function Home() {
     <div>
     <div className="bg-[#C4B5EE] rounded-lg pt-4 pb-4 shadow-lg">
       <Header />
-      <div className="relative isolate px-6 lg:px-8 border-4 border-[#DED3FF] ml-4 mr-4 rounded-lg">
+      <div className="relative isolate px-6 lg:px-8 border-4 border-[#DED3FF] ml-4 mr-4 rounded-lg z-999">
         <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -41,14 +41,14 @@ export default function Home() {
             Our goal is to provide a platform for dancers of all levels to hone their talents in a welcoming and safe environment.
 
             </p>
-            <div className="flex justify-center mt-4 z-1000">
-              <a href="https://www.instagram.com/vividdancecrew" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
+            <div className="flex justify-center mt-4 gap-4">
+                <a href="https://www.instagram.com/vividdancecrew" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#DED3FF] transition-colors duration-300 p-2">
                 <FontAwesomeIcon icon={faInstagram} size="2x" />
               </a>
-              <a href="http://www.youtube.com/@VIVIDDANCECREW" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
+                  <a href="http://www.youtube.com/@VIVIDDANCECREW" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#DED3FF] transition-colors duration-300 p-2">
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
               </a>
-              <a href="https://www.tiktok.com/@vividdancecrew23" target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
+              <a href="https://www.tiktok.com/@vividdancecrew23" target="_blank" rel="noopener noreferrer" className="text-white hover:text-[#DED3FF] transition-colors duration-300 p-2">
                 <FontAwesomeIcon icon={faTiktok} size="2x" />
               </a>
             </div>
