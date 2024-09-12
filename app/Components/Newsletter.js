@@ -46,32 +46,9 @@ export default function NewsletterSection() {
   };
 
   return (
-    <div className="mb-20">
-        <div className="flex justify-center mb-32 mt-12">
-            
-            {/* For small screens, display one of each star color */}
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#A790C6] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#A790C6] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#A790C6] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B297E0] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B297E0] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B297E0] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B9A8E0] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B9A8E0] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#B9A8E0] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#BDB5EC] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#BDB5EC] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#BDB5EC] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#D5BBED] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#D5BBED] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#D5BBED] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#E5C3DE] mx-1 sm:mx-2 sm:size-3x" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#E5C3DE] mx-1 sm:mx-2 sm:size-3x hidden md:inline-block" />
-            <FontAwesomeIcon icon={faStar} size="2x" className="text-[#E5C3DE] mx-1 sm:mx-2 sm:size-3x hidden lg:inline-block" />        
-        </div>
-        
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-      <div
+    <div className="bg-[#C4B5EE] rounded-lg pt-4 pb-4 shadow-lg overflow-hidden" style={{ boxShadow: '0 -4px 6px rgba(0, 0, 0, 0.1)' }}>
+      <div className="relative isolate px-6 lg:px-8 border-4 border-[#DED3FF] ml-4 mr-4 rounded-lg p-20">
+        <div
           aria-hidden="true"
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
         >
@@ -84,10 +61,9 @@ export default function NewsletterSection() {
           />
         </div>
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
-            
           <div className="max-w-xl lg:max-w-lg">
-            <h2 className="text-3xl font-bold tracking-tight  text-[#785C92] sm:text-4xl">Subscribe to our newsletter.</h2>
-            <p className="mt-4 text-lg leading-8  text-[#785C92]">
+            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">Subscribe to our newsletter.</h2>
+            <p className="mt-4 text-lg leading-8 text-[#785C92] font-semibold">
               Subscribe to our newsletter to stay up to date with anything VIVID!
             </p>
             <form onSubmit={handleFormSubmit} className="mt-6 flex gap-x-4">
@@ -96,12 +72,12 @@ export default function NewsletterSection() {
                 required
                 value={email}
                 onChange={handleEmailChange}
-                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-[#785C92] font-bold shadow-sm border-[#785C92] border-[2px] focus:border-[#CBC9FF] focus:outline-none"
+                className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-[#785C92] font-bold shadow-sm border-[#DED3FF] border-[2px] focus:border-[#785C92] focus:outline-none"
                 placeholder="Enter your email"
               />
               <button
                 type="submit"
-                className="flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm border bg-[#C4B5EE] hover:bg-[#785C92] rounded"
+                className="flex-none rounded-md px-3.5 py-2.5 text-sm font-semibold text-[#785C92] shadow-sm bg-[#DED3FF] hover:bg-[#785C92] hover:text-[#DED3FF] rounded"
                 style={{ transition: 'background-color 0.3s ease-in-out' }}
               >
                 Subscribe
@@ -114,8 +90,7 @@ export default function NewsletterSection() {
             )}
           </div>
         </div>
-      </div>
-      <div
+        <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
         >
@@ -127,6 +102,7 @@ export default function NewsletterSection() {
             className="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
           />
         </div>
+      </div>
     </div>
-  )
+  );
 }
