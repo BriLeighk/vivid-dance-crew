@@ -59,9 +59,9 @@ export default function Team() {
                             <h1 className="text-xl font-bold tracking-tight sm:text-2xl text-center text-[#785C92] mb-2">Presidents</h1>
                             <div className="flex justify-center gap-x-4 mb-16">
                                 {teamMembers.slice(0, 2).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#C4B5EE] border-4 border-[#DED3FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
-                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#DED3FF] wrap-none" />
-                                        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
+                                    <div key={index} className="flex flex-col items-center bg-[#ACB2FF] border-4 border-[#CDD6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                    <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#CDD6FF]" />
+                                    <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white wrap-none">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
                                         <div className="flex justify-center sm:mt-2">
                                             <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
@@ -77,8 +77,8 @@ export default function Team() {
                             <div className="flex justify-center gap-x-4 mb-16 flex-wrap gap-y-4">
                                 
                                 {teamMembers.slice(2, 5).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#C4B5EE] border-4 border-[#DED3FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
-                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#DED3FF]" />
+                                   <div key={index} className="flex flex-col items-center bg-[#B6B2FF] border-4 border-[#D7D6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                   <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#D7D6FF]" />
                                         <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
                                         <div className="flex justify-center sm:mt-2">
@@ -97,9 +97,9 @@ export default function Team() {
                             <h1 className="text-xl font-bold tracking-tight sm:text-2xl text-center text-[#785C92] mb-2">Dance Managers</h1>
                             <div className="flex justify-center gap-x-4 mb-16">
                                 {teamMembers.slice(6, 8).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#C4B5EE] border-4 border-[#DED3FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
-                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#DED3FF]" />
-                                        <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
+                                    <div key={index} className="flex flex-col items-center bg-[#C0B2FF] border-4 border-[#E1D6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                    <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#E1D6FF]" />
+                                    <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
                                         <div className="flex justify-center sm:mt-2">
                                             <a href={member.instagram} target="_blank" rel="noopener noreferrer" className="text-white mx-2 cursor-pointer">
@@ -115,8 +115,8 @@ export default function Team() {
                             <h1 className="text-xl font-bold tracking-tight sm:text-2xl text-center text-[#785C92] mb-2">Production</h1>
                             <div className="flex justify-center gap-x-4 mb-16">
                                 {teamMembers.slice(5, 6).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#C4B5EE] border-4 border-[#DED3FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
-                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#DED3FF]" />
+                                    <div key={index} className="flex flex-col items-center bg-[#CAB2FF] border-4 border-[#EBD6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#EBD6FF]" />
                                         <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
                                         <div className="flex justify-center sm:mt-2">
@@ -133,8 +133,8 @@ export default function Team() {
                             <h1 className="text-xl font-bold tracking-tight sm:text-2xl text-center text-[#785C92] mb-2">Social Media Managers</h1>
                             <div className="flex justify-center gap-x-4 mb-16">
                                 {teamMembers.slice(8, 10).map((member, index) => (
-                                    <div key={index} className="flex flex-col items-center bg-[#C4B5EE] border-4 border-[#DED3FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
-                                        <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#DED3FF]" />
+                                   <div key={index} className="flex flex-col items-center bg-[#D4B2FF] border-4 border-[#F5D6FF] rounded-lg p-4 shadow-lg h-[180px] w-[135px] sm:h-[240px] sm:w-[180px] justify-center">
+                                   <img src={member.image} alt={member.name} className="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover border-4 border-[#F5D6FF] wrap-none" />
                                         <h3 className="mt-2 sm:mt-4 text-sm sm:text-lg font-semibold text-white">{member.name}</h3>
                                         <p className="sm:mt-2 text-xs sm:text-sm text-[#785C92] font-semibold text-center">{member.role}</p>
                                         <div className="flex justify-center sm:mt-2">
